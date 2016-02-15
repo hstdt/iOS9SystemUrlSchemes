@@ -1,7 +1,10 @@
 # iOS9SystemUrlSchemes
 
 ##Introduce
-Settings url schemes on iOS9. 
+
+Settings url schemes on iOS9. If you have other,please give me commits or issues.
+
+PS:It seems not working on simulator.My device is iPhone6(iOS 9.2.1).
 
 ```objc
   @"prefs:root",//Settings 设置(equals to@"prefs:" )
