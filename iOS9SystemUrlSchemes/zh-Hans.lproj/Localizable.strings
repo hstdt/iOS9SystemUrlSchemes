@@ -1,0 +1,66 @@
+/*
+  Localizable.strings
+  iOS9SystemUrlSchemes
+
+  Created by hstdt on 16/2/15.
+  Copyright © 2016年 tdt. All rights reserved.
+*/
+
+"Settings"="设置";
+"Settings-Airplane Mode"="设置-飞行模式";
+"Settings-WLAN"="设置-无线局域网";
+"Settings-Bluetooth"="设置-蓝牙";
+"Settings-Cellular"="设置-蜂窝移动网络";
+"Settings-Personal Hotspot"="设置-个人热点";
+"Settings-VPN"="设置-VPN";
+"Settings-Carrier"="设置-运营商";
+"Settings-Notifications"="设置-通知";
+"Settings-Control Center"="设置-控制中心";
+"Settings-Do Not Disturb"="设置-勿扰模式";
+"Settings-General"="设置-通用";
+"Settings-General-About"="设置-通用-关于本机";
+"Settings-General-Software Update"="设置-通用-软件更新";
+"Settings-General-Siri"="设置-通用-Siri";
+"Settings-General-Accessibiilty"="设置-通用-辅助功能";
+"Settings-General-Backgound App Refresh"="设置-通用-后台应用刷新";
+"Settings-General-AutoLock"="设置-通用-自动锁定";
+"Settings-General-Date&Time"="设置-通用-日期与时间";
+"Settings-General-Keyboards"="设置-通用-键盘";
+"Settings-General-Keyboards-Keyboards"="设置-通用-键盘-键盘";
+"Settings-General-Language&Region"="设置-通用-语言与地区";
+"Settings-General-VPN"="设置-通用-VPN";
+"Settings-General-Profiles"="设置-通用-描述文件";
+"Settings-General-Reset"="设置-通用-还原";
+"Settings-Display&Brightness"="设置-显示和亮度";
+"Settings-Wallpaper"="设置-墙纸";
+"Settings-Sounds"="设置-声音";
+"Settings-Sounds-Ringtone"="设置-声音-电话铃声";
+"Settings-Touch ID&Passcode"="设置-Touch ID与密码";
+"Settings-Battery"="设置-电池";
+"Settings-Privacy"="设置-隐私";
+"Settings-Privacy-Location Services"="设置-隐私-定位服务";
+"Settings-iCloud"="设置-iCloud";
+"Settings-iCloud-Storage"="设置-iCloud-储存空间";
+"Settings-iTunes&App Stores"="设置-iTunes Store与App Store";
+"Settings-Mail,Contacts,Calendars"="设置-邮件、通讯录、日记";
+"Settings-Notes"="设置-备忘录";
+"Settings-Reminders"="设置-提醒事项";
+"Settings-Phone"="设置-电话";
+"Settings-Phone-Show My Caller ID"="设置-电话-在被叫方显示本机号码";
+"Settings-Messages"="设置-信息";
+"Settings-FaceTime"="设置-Facetime";
+"Settings-Maps"="设置-地图";
+"Settings-Compass"="设置-指南针";
+"Settings-Safari"="设置-Safari";
+"Settings-Music"="设置-音乐";
+"Settings-Videos"="设置-视频";
+"Settings-Photos&Camera"="设置-照片与相机";
+"Settings-Game Center"="设置-Game Center";
+"Settings-Twitter"="设置-Twitter";
+"Settings-Flickr"="设置-Flickr";
+"app-settings:"="app的权限页面";
+
+
+
+
+

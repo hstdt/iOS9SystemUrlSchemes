@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  iOS9SystemUrlSchemes
+
+  Created by hstdt on 16/2/15.
+  Copyright © 2016年 tdt. All rights reserved.
+*/
+
+
+"NSLocationWhenInUseUsageDescription"="app need at least 1 authorize requested to reach Authorization page";
+"NSLocationAlwaysUsageDescription"="app need at least 1 authorize requested to reach Authorization page";
+"CFBundleDisplayName"="iOS9SettingsUrlSchemes";

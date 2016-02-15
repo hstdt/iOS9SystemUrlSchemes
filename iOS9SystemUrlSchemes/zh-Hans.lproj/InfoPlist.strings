@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  iOS9SystemUrlSchemes
+
+  Created by hstdt on 16/2/15.
+  Copyright © 2016年 tdt. All rights reserved.
+*/
+
+
+"NSLocationWhenInUseUsageDescription"="必须有至少一项权限请求才能正确打开权限页面";
+"NSLocationAlwaysUsageDescription"="必须有至少一项权限请求才能正确打开权限页面";
+"CFBundleDisplayName"="iOS9设置UrlSchemes";

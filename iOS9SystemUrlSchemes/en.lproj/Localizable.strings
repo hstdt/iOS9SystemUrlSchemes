@@ -1,0 +1,68 @@
+/*
+  Localizable.strings
+  iOS9SystemUrlSchemes
+
+  Created by hstdt on 16/2/15.
+  Copyright © 2016年 tdt. All rights reserved.
+*/
+
+"Settings"="Settings";
+"Settings-Airplane Mode"="Settings-Airplane Mode";
+"Settings-WLAN"="Settings-WLAN";
+"Settings-Bluetooth"="Settings-Bluetooth";
+"Settings-Cellular"="Settings-Cellular";
+"Settings-Personal Hotspot"="Settings-Personal Hotspot";
+"Settings-VPN"="Settings-VPN";
+"Settings-Carrier"="Settings-Carrier";
+"Settings-Notifications"="Settings-Notifications";
+"Settings-Control Center"="Settings-Control Center";
+"Settings-Do Not Disturb"="Settings-Do Not Disturb";
+"Settings-General"="Settings-General";
+"Settings-General-About"="Settings-General-About";
+"Settings-General-Software Update"="Settings-General-Software Update";
+"Settings-General-Siri"="Settings-General-Siri";
+"Settings-General-Accessibiilty"="Settings-General-Accessibiilty";
+"Settings-General-Backgound App Refresh"="Settings-General-Backgound App Refresh";
+"Settings-General-AutoLock"="Settings-General-AutoLock";
+"Settings-General-Date&Time"="Settings-General-Date&Time";
+"Settings-General-Keyboards"="Settings-General-Keyboards";
+"Settings-General-Keyboards-Keyboards"="Settings-General-Keyboards-Keyboards";
+"Settings-General-Language&Region"="Settings-General-Language&Region";
+"Settings-General-VPN"="Settings-General-VPN";
+"Settings-General-Profiles"="Settings-General-Profiles";
+"Settings-General-Reset"="Settings-General-Reset";
+"Settings-Display&Brightness"="Settings-Display&Brightness";
+"Settings-Wallpaper"="Settings-Wallpaper";
+"Settings-Sounds"="Settings-Sounds";
+"Settings-Sounds-Ringtone"="Settings-Sounds-Ringtone";
+"Settings-Touch ID&Passcode"="Settings-Touch ID&Passcode";
+"Settings-Battery"="Settings-Battery";
+"Settings-Privacy"="Settings-Privacy";
+"Settings-Privacy-Location Services"="Settings-Privacy-Location Services";
+"Settings-iCloud"="Settings-iCloud";
+"Settings-iCloud-Storage"="Settings-iCloud-Storage";
+"Settings-iTunes&App Stores"="Settings-iTunes&App Stores";
+"Settings-Mail,Contacts,Calendars"="Settings-Mail,Contacts,Calendars";
+"Settings-Notes"="Settings-Notes";
+"Settings-Reminders"="Settings-Reminders";
+"Settings-Phone"="Settings-Phone";
+"Settings-Phone-Show My Caller ID"="Settings-Phone-Show My Caller ID";
+"Settings-Messages"="Settings-Messages";
+"Settings-FaceTime"="Settings-FaceTime";
+"Settings-Maps"="Settings-Maps";
+"Settings-Compass"="Settings-Compass";
+"Settings-Safari"="Settings-Safari";
+"Settings-Music"="Settings-Music";
+"Settings-Videos"="Settings-Videos";
+"Settings-Photos&Camera"="Settings-Photos&Camera";
+"Settings-Game Center"="Settings-Game Center";
+"Settings-Twitter"="Settings-Twitter";
+"Settings-Flickr"="Settings-Flickr";
+"app-settings:"="App Authorization Setting Page";
+
+
+
+
+
+
+
