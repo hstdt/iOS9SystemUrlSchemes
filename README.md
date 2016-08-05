@@ -61,6 +61,8 @@ PS:It seems not working on simulator.My device is iPhone6(iOS 9.2.1).
      @"prefs:root=GAMECENTER",//Settings-Game Center 设置-Game Center
      @"prefs:root=TWITTER",//Settings-Twitter 设置-Twitter
      @"prefs:root=FLICKR",//Settings-Flickr 设置-Flickr
+     @"prefs:root=WEIBO",// Settings-Weibo 设置-新浪微博
+     @"prefs:root=TENCENT_WEIBO", // Settings-Tencent Weibo 设置-腾讯微博
      UIApplicationOpenSettingsURLString,//->@"app-settings:",App Authorization Setting Page(at least 1 authorize requested)
 ```
 
