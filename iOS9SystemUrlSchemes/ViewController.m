@@ -25,6 +25,7 @@
     NSAssert(!TARGET_IPHONE_SIMULATOR, @"It should run on iphone/ipad, not simulator");
     
     self.localizedStringArray = @[
+                              @"====Settings===",
                               @"Settings",
                               @"Settings-Airplane Mode",
                               @"Settings-WLAN",
@@ -61,6 +62,7 @@
                               @"Settings-iCloud",
                               @"Settings-iCloud-Storage",
                               @"Settings-iTunes&App Stores",
+                              @"Settings-Wallet & Apple Pay",
                               @"Settings-Mail,Contacts,Calendars",
                               @"Settings-Notes",
                               @"Settings-Reminders",
@@ -72,15 +74,47 @@
                               @"Settings-Compass",
                               @"Settings-Safari",
                               @"Settings-Music",
+                              @"Settings-Music-EQ",
                               @"Settings-Videos",
                               @"Settings-Photos&Camera",
+                              @"Settings-iBooks",
+                              @"Settings-Podcasts",
                               @"Settings-Game Center",
                               @"Settings-Twitter",
+                              @"Settings-Facebook",
                               @"Settings-Flickr",
+                              @"Settings-VIMEO",
+                              @"Settings-Sina Weibo",
+                              @"Settings-Tencent Weibo",
                               UIApplicationOpenSettingsURLString,//->@"app-settings:",App Authorization Setting Page(at least 1 authorize requested)
+                              @"====Apps===",
+                              @"Passbook",
+                              @"Safari",
+                              @"Podcast",
+                              @"Apple News:",
+                              @"iTunes Store",
+                              @"iBooks",
+                              @"GameCenter:",
+                              @"FindMyPhone",
+                              @"Facetime audio(disappear at Chinese version)",
+                              @"Facetime",
+                              @"iWatch:",
+                              @"App Store",//itms-apps://itunes.apple.com/app/id${ID}
+                              @"Reminders(Open then crash)",
+                              @"Notes",
+                              @"Apple Music",
+                              @"Send a Message",
+                              @"Mail Inbox",
+                              @"Send a Mail",
+                              @"Map",
+                              @"Videos",
+                              @"FindMyFriends",
+                              @"Call 0123-45-6789",
+                              @"Call 0123-45-6789 with alert",
                               ];
     
     self.settingsUrlSchemeArray = @[
+                        @"=====Settings=====",
                         @"prefs:root",//Settings 设置(equals to@"prefs:" )
                             @"prefs:root=AIRPLANE_MODE",//Settings-Airplane Mode 设置-飞行模式 Switch to airplane mode(It seems not working well on iOS9.2.1)
                             @"prefs:root=WIFI",//Settings-WLAN 设置-无线局域网
@@ -119,6 +153,7 @@
                             @"prefs:root=CASTLE",//Settings-iCloud  设置-iCloud
                                 @"prefs:root=CASTLE&path=STORAGE_AND_BACKUP",//Settings-iCloud-Storage 设置-iCloud-储存空间
                             @"prefs:root=STORE",//Settings-iTunes&App Stores  设置-iTunes Store与App Store
+                            @"prefs:root=PASSBOOK",//Settings-Wallet 设置-wallet 与 Apple Pay
                             @"prefs:root=ACCOUNT_SETTINGS",//Settings-Mail,Contacts,Calendars 设置-邮件、通讯录、日记
                             @"prefs:root=NOTES",//Settings-Notes 设置-备忘录
                             @"prefs:root=REMINDERS",//Settings-Reminders 设置-提醒事项
@@ -130,12 +165,67 @@
                             @"prefs:root=COMPASS",//Settings-Compass 设置-指南针
                             @"prefs:root=SAFARI",//Settings-Safari 设置-Safari
                             @"prefs:root=MUSIC",//Settings-Music 设置-音乐
+                                @"prefs:root=MUSIC&path=com.apple.Music:EQ",//Settings-Music-EQ 设置-音乐-EQ
                             @"prefs:root=VIDEO",//Settings-Videos 设置-视频
                             @"prefs:root=Photos",//Settings-Photos&Camera 设置-照片与相机
+                            @"prefs:root=com.apple.iBooks",//Settings-iBooks
+                            @"prefs:root=com.apple.podcasts",//Settings-播客
                             @"prefs:root=GAMECENTER",//Settings-Game Center 设置-Game Center
                             @"prefs:root=TWITTER",//Settings-Twitter 设置-Twitter
+                            @"prefs:root=FACEBOOK",//Settings-Facebook 设置-Facebook
                             @"prefs:root=FLICKR",//Settings-Flickr 设置-Flickr
+                            @"prefs:root=VIMEO",//Settings-Vimeo
+                            @"prefs:root=WEIBO",// Settings-Weibo 设置-新浪微博
+                            @"prefs:root=TENCENT_WEIBO", // Settings-Tencent Weibo 设置-腾讯微博
                             UIApplicationOpenSettingsURLString,//->@"app-settings:",App Authorization Setting Page(at least 1 authorize requested)
+                            @"=====Apps=====",
+                            @"shoebox:",//Wallet
+                            @"x-web-search:",//Safari
+                            @"pcast:",//Pod cast
+                            @"applenews:",//Apple News
+                            @"itms:",//iTunes Store With additional apis below,iTunes Store 下面是额外接口
+                            //1.iTunes Store(View Album):itms://itunes.apple.com/us/album/id${ID}?app=itunes
+                            //2.iTunes Store(View Artist):itms://itunes.apple.com/us/artist/id${ID}?app=itunes
+                            @"ibooks:",//iBooks
+                            @"gamecenter:",//Game Center
+                            @"fmip1:",//Find My Phone
+                            @"facetime-audio:(disappeared at Chinese version)",//facetime-audio,国行被阉割
+                            @"facetime:",//Facetime
+                            @"itms-watch:",//iWatch
+                            @"itms-apps:",//App Store
+                                          //open by id:itms-apps://itunes.apple.com/app/id${ID}
+                            @"x-apple-reminder:",//Reminders,提醒事项
+                            @"mobilenotes:",//Notes
+                            @"music:",//Apple Music
+                            //1.View Album:https://itunes.apple.com/us/album/id${ID}?app=music
+                            //2.View Artist:https://itunes.apple.com/us/artist/id${ID}?app=music
+                            @"sms:",//Send a Message,发短信
+                            @"message:",//Mail-Inbox,进入收件箱
+                            @"mailto:",//Mail-Send a mail,发邮件
+                            @"http://maps.apple.com/?q",//Maps,地图
+                            @"videos:",//Videos,视频
+                            @"findmyfriends:",//Find My Friends
+                            @"tel:0123-45-6789",//Call 0123-45-6789,拨打电话0123-45-6789
+                            @"telprompt:0123-45-6789",//Call 0123-45-6789 with alert,提示拨打电话0123-45-6789
+                            /* sth not correct on my phone,but may be right.
+                             @"voicememos:",
+                             @"contact:",
+                             @"iclouddriveapp:",
+                             @"mobilephone:",
+                             @"mobilephone-favorites:",
+                             @"mobilephone-recents:",
+                             @"vmshow:",
+                             @"weather:",
+                             @"weather://?index=0",
+                             @"clock-timer:",
+                        @"prefs:root=General&path=Spotlight%20Search",
+                        @"prefs:root=com.apple.itunesu",
+                        @"prefs:root=General&path=About/Diagnostics %26 Usage",
+                        @"prefs:root=General&path=About/NAME",
+                        @"prefs:root=General&path=About/Legal",
+                        @"prefs:root=General&path=MOBILE_DATA_SETTINGS_ID/INTERNET_TETHERING/WIFI_PASSWORD",
+                        @"prefs:root=MUSIC&path=EQ",
+                             */
                         ];
     //ios8?
     //@"prefs:root=General&path=STORAGE_AND_BACKUP",//设置-后台应用刷新
