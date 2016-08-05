@@ -2,12 +2,12 @@
 
 ##Introduce
 
-Settings url schemes on iOS9. If you have other,please give me commits or issues.
+Url schemes of settings & system apps on iOS9. If you have others,please give me pull or issues.
 
-PS:It seems not working on simulator.My device is iPhone6(iOS 9.2.1).
+My device is iPhone6(iOS 9.3.3).
 
 ```objc
-@"=====Settings=====",
+							@"=====Settings=====",
                         @"prefs:root",//Settings 设置(equals to@"prefs:" )
                             @"prefs:root=AIRPLANE_MODE",//Settings-Airplane Mode 设置-飞行模式 Switch to airplane mode(It seems not working well on iOS9.2.1)
                             @"prefs:root=WIFI",//Settings-WLAN 设置-无线局域网
@@ -71,7 +71,7 @@ PS:It seems not working on simulator.My device is iPhone6(iOS 9.2.1).
                             @"prefs:root=WEIBO",// Settings-Weibo 设置-新浪微博
                             @"prefs:root=TENCENT_WEIBO", // Settings-Tencent Weibo 设置-腾讯微博
                             UIApplicationOpenSettingsURLString,//->@"app-settings:",App Authorization Setting Page(at least 1 authorize requested)
-                            @"=====Apps=====",
+                        @"=====Apps=====",
                             @"shoebox:",//Wallet
                             @"x-web-search:",//Safari
                             @"pcast:",//Pod cast
