@@ -15,6 +15,12 @@ eg:
 
 My device is iPhone6(iOS 9.3.3).
 
+
+---
+**If you are above iOS 10.0,you should replace `prefs` with `Prefs`.Such as `Prefs:root=WIFI`.**
+
+---
+
 ```objc
 							@"=====Settings=====",
                         @"prefs:root",//Settings 设置(equals to@"prefs:" )
