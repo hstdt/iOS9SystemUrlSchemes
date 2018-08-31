@@ -6,9 +6,12 @@ Url schemes of settings & system apps on iOS9. If you have others,please give me
 
 ==== update: 
 
-For iOS 10+ , `prefs==>Prefs`,then add prefix `app-`.
+For iOS 10+ , `prefs==>Prefs`, need to add prefix `app-` except `Today Widget`.
 
-eg: `"app-Prefs:root"`
+eg: 
+
+* in app using `app-Prefs:root`
+* `Today Widget` using `Prefs:root`
 
 My device is iPhone6(iOS 9.3.3).
 
